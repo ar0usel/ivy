@@ -106,15 +106,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../../functional/backends.html">Backends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../functional/ivy.html">Ivy</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Graph compiler</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../../graph_compiler/compiler.html">Compiler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../../graph_compiler/globals.html">Globals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../../graph_compiler/graph.html">Graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../../graph_compiler/helpers.html">Helpers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../../graph_compiler/op_logging.html">Op logging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../../graph_compiler/param.html">Param</a></li>
-</ul>
 <p class="caption"><span class="caption-text">Stateful</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../stateful/activations.html">Activations</a></li>
@@ -324,7 +315,7 @@
     <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">reduce_min</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">keepdims</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="reduce_max"><a class="viewcode-back" href="../../../../../functional/ivy/core/reductions/reduce_max.html#ivy.functional.ivy.core.reductions.reduce_max">[docs]</a><span class="k">def</span> <span class="nf">reduce_max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="viewcode-block" id="max"><a class="viewcode-back" href="../../../../../functional/ivy/core/reductions/max.html#ivy.functional.ivy.core.reductions.max">[docs]</a><span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Computes the maximum value along the specified axis. The maximum is taken over the flattened array by default,</span>
 <span class="sd">    otherwise over the specified axis.</span>
@@ -340,7 +331,7 @@
 <span class="sd">    :type keepdims: bool, optional</span>
 <span class="sd">    :return: The array with maxes computed.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">reduce_max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">keepdims</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">_cur_framework</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">keepdims</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="einsum"><a class="viewcode-back" href="../../../../../functional/ivy/core/reductions/einsum.html#ivy.functional.ivy.core.reductions.einsum">[docs]</a><span class="k">def</span> <span class="nf">einsum</span><span class="p">(</span><span class="n">equation</span><span class="p">,</span> <span class="o">*</span><span class="n">operands</span><span class="p">):</span>

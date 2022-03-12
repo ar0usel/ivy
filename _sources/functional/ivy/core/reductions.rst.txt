@@ -18,6 +18,6 @@ Reductions
    reductions/reduce_var.rst
    reductions/reduce_std.rst
    reductions/reduce_min.rst
-   reductions/reduce_max.rst
+   reductions/max.rst
    reductions/einsum.rst
 
